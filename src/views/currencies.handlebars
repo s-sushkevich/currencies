@@ -1,0 +1,11 @@
+{{#> layout }}
+{{#*inline "content"}}
+<h1 class="modal-title">Currencies for {{currency}} on {{date}}</h1>
+<div id="currencies-cont"></div>
+<ul>
+    {{#each rates}}
+    <li>{{@key}}: {{this}}</li>
+    {{/each}}
+</ul>
+{{/inline}}
+{{/layout}}
